@@ -49,7 +49,19 @@
                     </div><!-- /.logo-box -->
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="main-navigation">
-                        <ul class=" navigation-box">
+                        <?php
+
+                            $args = array(
+                                'theme_location'    => 'primary',
+                                'menu_class'        => 'navigation-box',
+                                'container'         =>  false,
+                                'depth'             =>  '0',
+                                'walker'            =>  new My_Custom_Nav_Walker()
+                            );
+
+                            wp_nav_menu($args);
+                        ?>
+                        <!-- <ul class=" navigation-box">
                             <li class="current">
                                 <a href="index.html">Home</a>
                                 <ul class="submenu">
@@ -57,7 +69,7 @@
                                     <li><a href="index2.html">Home Two</a></li>
                                     <li><a href="index3.html">Home Three</a></li>
                                     <li><a href="index4.html">Home Four</a></li>
-                                </ul><!-- /.submenu -->
+                                </ul>
                             </li>
                             <li>
                                 <a href="about.html">About</a>
@@ -70,19 +82,19 @@
                                     <li><a href="how-works.html">How they works</a></li>
                                     <li><a href="pricing.html">Plans & Pricing</a></li>
                                     <li><a href="success.html">Success Stories</a></li>
-                                </ul><!-- /.submenu -->
+                                </ul>
                             </li>
                             <li>
                                 <a href="news.html">News</a>
                                 <ul class="submenu">
                                     <li><a href="news.html">News Page</a></li>
                                     <li><a href="news-details.html">News Details</a></li>
-                                </ul><!-- /.submenu -->
+                                </ul>
                             </li>
                             <li>
                                 <a href="contact.html">Contact</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div><!-- /.navbar-collapse -->
                     <div class="right-side-box">
                         <a href="#" class="header-one__link">Call us 000 8888 999</a>
