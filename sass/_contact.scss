@@ -1,0 +1,188 @@
+.contact-style-one {
+    padding-top: 120px;
+
+    .inner-container {
+        background-color: $thm_base_color;
+        margin-bottom: -120px;
+        position: relative;
+        z-index: 20;
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 770px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 110px;
+            padding-bottom: 120px;
+        }
+    }
+
+    .contact-form {
+        .row {
+            margin-left: -10px;
+            margin-right: -10px;
+
+            [class*=col-] {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            display: block;
+            border: none;
+            outline: none;
+            color: #7B7F85;
+            font-size: 16px;
+            height: 79px;
+            padding-left: 30px;
+            margin-bottom: 20px;
+
+            @include placeholder {
+                color: #7B7F85;
+            }
+        }
+
+        textarea {
+            height: 190px;
+            padding-top: 20px;
+        }
+
+        .submit-btn-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .thm-btn {
+                background-color: $thm_black;
+
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+#contact-google-map {
+    width: 100%;
+    height: 545px;
+}
+
+.features-one,
+.contact-info-one {
+    padding-top: 90px;
+
+    &__single {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(236, 233, 227);
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        padding: 56.5px 0;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 30px;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: $thm_base_color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: scale(0, 1);
+            transform-origin: right center;
+            transition: transform .4s ease;
+        }
+
+        &:hover {
+            &:before {
+                transform: scale(1, 1);
+                transform-origin: left center;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        color: $thm_black;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin: 0;
+        color: #7B7F85;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+
+.contact-two {
+    &__form {
+        padding-right: 60px;
+        .row {
+            margin-left: -10px;
+            margin-right: -10px;
+
+            [class*=col-] {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            display: block;
+            border: none;
+            outline: none;
+            background-color: #ece9e3;
+            color: #7B7F85;
+            font-size: 16px;
+            height: 79px;
+            padding-left: 30px;
+            margin-bottom: 20px;
+
+            @include placeholder {
+                color: #7B7F85;
+            }
+        }
+
+        textarea {
+            height: 190px;
+            padding-top: 20px;
+        }
+        .thm-btn {
+            &:hover {
+                background-color: $thm_black;
+                color: $thm_base_color;
+            }
+        }
+    }
+
+    &__home-four {
+        padding-top: 120px;
+        .contact-two__content {
+            padding-bottom: 120px;
+        }
+        .contact-two__form {
+            padding-right: 10px;
+            input,
+            textarea {
+                background-color: #ece9e3;
+                color: #7b7f85;
+                @include placeholder {
+                    color: #7b7f85;
+                }
+            }
+        }
+    }
+}

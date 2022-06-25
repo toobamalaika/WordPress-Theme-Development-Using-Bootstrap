@@ -1,0 +1,61 @@
+.team-one {
+	padding: 120px 0 90px;
+	&__single {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&__image {
+		> img {
+			width: 100%;
+		}
+	}
+	&__title {
+		color: $thm_black;
+		font-size: 22px;
+		font-weight: 600;
+		margin: 0;
+		line-height: 1em;
+		margin-top: 30px;
+		a {
+			color: inherit;
+			transition: all .4s ease;
+			&:hover {
+				color: $thm_base_color;
+			}
+		}
+	}
+	&__designation {
+		margin: 0;
+		line-height: 1em;
+		color: #7B7F85;
+		font-size: 16px;
+		margin-bottom: 25px;
+		margin-top: 20px;
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			width: 59px;
+			height: 59px;
+			background-color: $thm_gray;
+			color: #7B7F85;
+			font-size: 18px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			transition: all .4s ease;
+
+			&:hover {
+				background-color: $thm_black;
+				color: $thm_base_color;
+			}
+			+ a {
+				margin-left: 10px;
+			}
+		}
+	}
+}

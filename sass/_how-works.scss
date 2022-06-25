@@ -1,0 +1,26 @@
+.how-works-one {
+	.sec-title {
+		margin-bottom: 20px;
+	}
+	&__text {
+		margin: 0;
+	}
+	&__text+&__text {
+		margin-top: 30px;
+	}
+    &__content {
+        @media(min-width: 992px) {
+            padding-left: 85px;
+        }
+    }
+
+    .flex-row-reverse {
+        .how-works-one__content {
+
+            @media(min-width: 992px) {
+                padding-left: 0;
+                padding-right: 85px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.todo-list-style-one {
+	padding: 120px 0;
+	background-color: #f8f6f3;
+	.image-block {
+		margin-top: -20px;
+		position: relative;
+		right: 20px;
+	}
+	.content-block {
+		.sec-title {
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		.sec-title .title-line {
+			margin-bottom: 17px;
+		}
+		p {
+			margin: 0;
+			color: #7b7f85;
+			font-size: 18px;
+			line-height: 36px;
+			+p {
+				margin-top: 30px;
+			}
+		}
+		a.more-link {
+			color: $thm_base_color;
+			font-size: 20px;
+			font-weight: 600;
+			display: inline-block;
+			vertical-align: middle;
+			border-bottom: 1px solid $thm_base_color;
+			margin-top: 30px;
+		}
+	}
+	&.how-works-page {
+		background-color: #fff;
+		border-top: 2px solid #ECE9E3;
+	}
+}

@@ -1,0 +1,40 @@
+.subscribe-one {
+	padding: 120px 0;
+	&__tag-line {
+		margin: 0;
+
+		font-family: $thm_font_two;
+		color: $thm_base_color;
+		font-size: 20px;
+	}
+	&__title {
+		margin: 0;
+		font-size: 20px;
+		font-weight: 500;
+		color: $thm_black;
+	}
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		input {
+			border: none;
+			outline: none;
+			background-color: transparent;
+			width: 100%;
+			max-width: 450px;
+			background-color: #ECE9E3;
+			height: 79px;
+			color: #7B7F85;
+			padding-left: 30px;
+			@include placeholder {
+				color: #7B7F85;
+			}
+		}
+	}
+	&__btn {
+		padding: 24.5px 52px;
+		&:hover {
+            background-color: $thm_black;
+        }
+	}
+}

@@ -1,0 +1,100 @@
+.why-choose-one {
+    padding-top: 120px;
+    margin-bottom: 60px;
+
+    &__single {
+        text-align: center;
+        background-color: #fff;
+        position: relative;
+        padding-bottom: 50px;
+        padding-top: 60px;
+        transition: all .4s ease;
+        margin-bottom: -60px;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            transform: scale(0, 1);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $thm_base_color;
+            transition: transform .4s ease;
+            transform-origin: left center;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 30px 0px rgba(4, 5, 5, 0.1), inset 0px -4px 0px 0px rgba(225, 139, 29, 0.004);
+            z-index: 10;
+
+            &:before {
+                transform: scale(1, 1);
+                transform-origin: right center;
+            }
+        }
+    }
+
+    &__icon {
+        background-color: $thm_gray;
+        width: 117px;
+        height: 117px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s ease;
+
+        i {
+            font-size: 45px;
+            color: #7b7f85;
+            transition: all .4s ease;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 20px;
+        line-height: 36px;
+        color: $thm_black;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 68%;
+        margin-left: auto;
+        margin-right: auto;
+
+        a {
+            color: inherit;
+            transition: all .4s ease;
+
+            &:hover {
+                color: $thm_base_color;
+            }
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 36px;
+        color: #7b7f85;
+        width: 57%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__single:hover &__title {
+        a {
+            color: $thm_base_color;
+        }
+    }
+    &__single:hover &__icon {
+        background-color: $thm_base_color;
+        i {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.fact-style-one {
+	background-color: #18212e;
+	position: relative;
+	padding: 115.5px 0;
+	.fun-fact-bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.content-block {
+		// padding-right: 85px;
+		p {
+			color: #b3bbc6;
+			margin: 0;
+			font-size: 18px;
+			line-height: 36px;
+		}
+	}
+	.sec-title {
+		margin-bottom: 16px;
+		.title-line {
+			letter-spacing: -.06em;
+			font-size: 50px;
+			margin-bottom: 17px;
+		}
+	}
+	.counter-block-wrapper {
+		padding-left: 97px;
+		width: 100%;
+		display: block;
+	}
+	.counter-block {
+		background-color: $thm_base_color;
+		padding: 50px 0;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 1px;
+			height: calc(100% - 100px);
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+			opacity: .2;
+		}
+		.single-counter-one {
+			position: relative;
+			width: 50%;
+			float: left;
+			text-align: center;
+			.top-block {
+				text-align: center;
+				.icon-block {
+					display: inline-block;
+					width: 182px;
+					height: 182px;
+					border-radius: 50%;
+					text-align: center;
+					background-color: #fff;
+					i {
+						font-size: 50px;
+						line-height: 182px;
+						color: $thm_black;
+					}
+				}
+			}
+			h3 {
+				font-size: 18px;
+				font-weight: 600;
+				color: #fff;
+				margin-top: 20px;
+
+			}
+			.count-text {
+				background-color: $thm_black;
+				display: inline-block;
+				vertical-align: middle;
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 70px;
+				color: #f8f6f3;
+				font-size: 16px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				transform: translate(-50%, 0%);
+			}
+		}
+	}
+}
+
+.funfact-one {
+	padding: 120px 0;
+	.sec-title {
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
+	&__block-text {
+		margin: 0;
+		color: #7B7F85;
+		font-size: 18px;
+		line-height: 36px;
+		margin-bottom: 50px;
+	}
+	.row.high-gutters {
+		margin-left: -20px;
+		margin-right: -20px;
+		> [class*=col-] {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	&__content {
+		@media(min-width: 992px) {
+			margin-left: -20px;
+		}
+	}
+
+	&__single {
+		padding: 45px;
+		background-color: $thm_base_color;
+	}
+	&__title {
+		margin: 0;
+		color: #fff;
+		font-size: 50px;
+		font-weight: 300;
+		letter-spacing: -0.06em;
+		line-height: 1em;
+		margin-bottom: 15px;
+	}
+	&__text {
+		margin: 0;
+		color: #fff;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+	}
+}

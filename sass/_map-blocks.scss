@@ -1,0 +1,154 @@
+.map-style-one {
+    padding: 110px 0 0;
+    position: relative;
+    padding-bottom: 160px;
+
+    [class*="map-shape-"] {
+        position: absolute;
+        animation-name: shapeMover;
+        animation-duration: 9s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .map-shape-1-1 {
+        left: -50px;
+        top: 20%;
+    }
+
+    .map-shape-1-2 {
+        left: 10%;
+        top: 15%;
+    }
+
+    .map-shape-1-3 {
+        right: 10%;
+        top: 15%;
+    }
+
+    .map-shape-1-4 {
+        bottom: 20%;
+        right: 15%;
+    }
+
+    .map-shape-1-5 {
+        bottom: 20%;
+        left: 10%;
+    }
+
+    [class*="map-person-"] {
+        position: absolute;
+
+        img {
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .map-blocks {
+        position: relative;
+    }
+
+    .map-person-1 {
+        top: 0;
+        left: 0;
+    }
+
+    .map-person-2 {
+        top: 5px;
+        left: 40%;
+    }
+
+    .map-person-3 {
+        top: 0;
+        right: 15%;
+    }
+
+    .map-person-4 {
+        top: 10%;
+        right: 0;
+    }
+
+    .map-person-5 {
+        top: 30%;
+        left: 30%;
+    }
+
+    .map-person-6 {
+        top: 40%;
+        right: 30%;
+    }
+
+    .map-person-7 {
+        bottom: 5%;
+        left: 20%;
+    }
+
+    .map-person-8 {
+        bottom: 5%;
+        right: 10%;
+    }
+
+    .map-image {
+        opacity: .3;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        max-width: 945px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+
+    .button-block {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 60px;
+
+        .thm-btn {
+        	&:hover {
+        		background-color: $thm_black;
+        	}
+        }
+
+        .btn-tagline {
+            color: $thm_black;
+            font-family: $thm_font_two;
+            position: absolute;
+            bottom: -42px;
+            left: -50%;
+            transform: translateX(50%);
+
+            i {
+                display: inline-block;
+                transition: all .4s ease;
+                font-size: 27px;
+                animation-name: btnIconMove;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes btnIconMove {
+                0% {
+                    transform: rotate(-85deg) scale(1, -1) translate(3px, 0px);
+                }
+
+                50% {
+                    transform: rotate(-75deg) scale(1, -1) translate(10px, 0px);
+                }
+
+                100% {
+                    transform: rotate(-85deg) scale(1, -1) translate(3px, 0px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,199 @@
+.site-footer.footer-one {
+    background-color: #18212e;
+
+
+    .upper-footer {
+        padding-bottom: 100px;
+        padding-top: 220px;
+        border-bottom: 1px solid #242F3E;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button-block {
+            position: relative;
+
+            .btn-tagline {
+                color: #FFFFFF;
+                font-family: $thm_font_two;
+                position: absolute;
+                bottom: -42px;
+                left: -50%;
+                transform: translateX(50%);
+
+                i {
+                    display: inline-block;
+                    transition: all .4s ease;
+                    font-size: 27px;
+                    animation-name: btnIconMove;
+                    animation-duration: 2s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes btnIconMove {
+                    0% {
+                        transform: rotate(-85deg) scale(1, -1) translate(3px, 0px);
+                    }
+
+                    50% {
+                        transform: rotate(-75deg) scale(1, -1) translate(10px, 0px);
+                    }
+
+                    100% {
+                        transform: rotate(-85deg) scale(1, -1) translate(3px, 0px);
+                    }
+                }
+            }
+        }
+    }
+
+    &.footer-inner-page .upper-footer {
+        padding-top: 120px;
+    }
+
+    .middle-footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .social-block {
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            width: 59px;
+            height: 59px;
+            border-radius: 50%;
+            background-color: #242e3c;
+            text-align: center;
+            line-height: 59px;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 18px;
+            transition: all .4s ease;
+
+            &:hover {
+                background-color: $thm_base_color;
+            }
+
+            +a {
+                margin-left: 7px;
+            }
+        }
+    }
+
+    .footer-widget {
+
+        ul,
+        p,
+        h3 {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        p {
+            color: #B3BBC6;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        a {
+            color: #B3BBC6;
+            font-size: 16px;
+            transition: all .4s ease;
+
+            &:hover {
+                color: $thm_base_color;
+            }
+        }
+
+        .footer-logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 37px;
+        }
+
+        .widget-title {
+            margin-bottom: 37px;
+
+            h3 {
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .links-list {
+            li {
+                +li {
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        &.explore-widget {
+            padding-left: 70px;
+        }
+
+        &.legal-widget {
+            padding-left: 12px;
+        }
+
+        &.contact-widget {
+            padding-left: 38px;
+
+            .widget-title {
+                margin-bottom: 6px;
+            }
+
+            .widget-title h3 {
+                font-size: 16px;
+            }
+
+            p {
+                color: $thm_base_color;
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 600;
+                font-weight: 600;
+
+                strong {
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 500;
+                    display: block;
+                    margin-top: -4px;
+                }
+
+                +p {
+                    margin-top: 17px;
+                }
+            }
+        }
+
+    }
+
+    .bottom-footer {
+        padding: 34px 0;
+        background-color: #121A24;
+
+        p {
+            margin: 0;
+            color: #B3BBC6;
+            font-size: 16px;
+
+            a {
+                color: #FFFFFF;
+                transition: all .4s ease;
+
+                &:hover {
+                    color: $thm_base_color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.about-one {
+	padding: 120px 0 90px;
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+
+        >[class*=col-lg] {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        color: #7B7F85;
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    &__btn {
+        font-size: 13px;
+        padding: 14.5px 42px;
+        margin-top: 50px;
+
+        &:hover {
+            background-color: $thm_black;
+        }
+    }
+
+    .sec-title {
+    	margin-top: -20px;
+        margin-bottom: 20px;
+    }
+	
+	&__image,
+    &__content {
+    	margin-bottom: 30px;
+    }
+
+    &__video {
+    	margin-bottom: 30px;
+        position: relative;
+
+        >img {
+            width: 100%;
+
+        }
+
+        &-link {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: $thm_base_color;
+            border-radius: 50%;
+            transition: all .4s ease;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+
+            &:hover {
+                background-color: $thm_black;
+            }
+
+            i {
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+    }
+
+    &__single {
+        display: flex;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(236, 233, 227);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 27.5px 0;
+        margin-bottom: 30px;
+    }
+
+    &__icon {
+        color: $thm_base_color;
+        font-size: 72px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        color: $thm_black;
+        margin-top: 40px;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+
+.about-two {
+    padding: 120px 0;
+    .sec-title {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin: 0;
+        margin-bottom: 55px;
+    }
+    .about-one__video {
+        margin-bottom: 0;
+    }
+}
