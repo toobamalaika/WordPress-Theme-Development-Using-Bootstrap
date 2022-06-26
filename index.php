@@ -101,6 +101,7 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.thm-black-bg -->
+
         <section class="testimonials-one">
             <img src="images/backgrounds/testi-bg-1-1.png" class="testimonials-one__background-image" alt="Awesome Image" />
             <div class="container">
@@ -122,36 +123,40 @@
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
                         <div class="sec-title">
-                            <span class="tag-line ">Testimonials</span>
+                            <span class="tag-line ">Posts</span>
                             <h2 class="title-line ">See what other people <br> are talking about <br> Inston.</h2>
                             <span class="line-block-two "></span>
                         </div><!-- /.sec-title -->
                         <div class="testimonials-one__carousel">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="testimonials-one__single">
-                                        <p class="testimonials-one__text">I've just had two of the most productive weeks I've had in years. Ben was perfectly matched to my temperament, and has been taking all the backlogged work off my plate and finishing it. I'm really impressed.</p><!-- /.testimonials-one__text -->
-                                        <h3 class="testimonials-one__title">Joe Kolmer</h3><!-- /.testimonials-one__title -->
-                                        <span class="testimonials-one__designation">CTO & Co Founder</span>
-                                        <a href="#" class="testimonials-one__link">Let's Date</a>
-                                    </div><!-- /.testimonials-one__single -->
-                                </div><!-- /.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <div class="testimonials-one__single">
-                                        <p class="testimonials-one__text">I've just had two of the most productive weeks I've had in years. Ben was perfectly matched to my temperament, and has been taking all the backlogged work off my plate and finishing it. I'm really impressed.</p><!-- /.testimonials-one__text -->
-                                        <h3 class="testimonials-one__title">Darrin Martos</h3><!-- /.testimonials-one__title -->
-                                        <span class="testimonials-one__designation">CTO & Co Founder</span>
-                                        <a href="#" class="testimonials-one__link">Let's Date</a>
-                                    </div><!-- /.testimonials-one__single -->
-                                </div><!-- /.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <div class="testimonials-one__single">
-                                        <p class="testimonials-one__text">I've just had two of the most productive weeks I've had in years. Ben was perfectly matched to my temperament, and has been taking all the backlogged work off my plate and finishing it. I'm really impressed.</p><!-- /.testimonials-one__text -->
-                                        <h3 class="testimonials-one__title">Tammy Daniely</h3><!-- /.testimonials-one__title -->
-                                        <span class="testimonials-one__designation">CTO & Co Founder</span>
-                                        <a href="#" class="testimonials-one__link">Let's Date</a>
-                                    </div><!-- /.testimonials-one__single -->
-                                </div><!-- /.swiper-slide -->
+
+                                <?php 
+
+                                    if(have_posts()) :
+                                        while(have_posts()) : the_post();
+
+                                ?>
+
+                                            <div class="swiper-slide">
+                                                <div class="testimonials-one__single">
+                                                    <p class="testimonials-one__text"><?php echo substr(get_the_excerpt(), 0, 130); ?></p><!-- /.testimonials-one__text -->
+                                                    <h3 class="testimonials-one__title"><?php echo ucwords(get_the_author()); ?></h3><!-- /.testimonials-one__title -->
+                                                    <span class="testimonials-one__designation"><?php echo ucwords(get_author_role()); ?></span>
+                                                    <!-- the_category() for getting category name of post -->
+                                                    <!-- the_time('F j, Y') for get post time -->
+                                                    <a href="<?php the_permalink(); ?>" class="testimonials-one__link">Read More</a>
+                                                </div><!-- /.testimonials-one__single -->
+                                            </div><!-- /.swiper-slide -->
+                                            
+
+                                <?php
+
+                                        endwhile;
+                                    endif;
+
+                                ?>
+
+                                
                             </div><!-- /.swiper-wrapper -->
                         </div><!-- /.testimonials-one__carousel -->
                         <div class="carousel-btn-block testimonials-one__btn">
@@ -162,6 +167,7 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.testimonials-one -->
+
         <section class="pricing-one">
             <div class="container">
                 <div class="sec-title text-center">
